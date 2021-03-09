@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='dashboard.css'>
+    <title>Dahboard</title>
+</head>
+<body>
+    <div class="outer">
+        <div class="button_box">
+            <button id="temp" onclick="refresh(1)">Temperature</button>
+            <button id="humidity" onclick="refresh(2)">Humidity</button>
+            <button id="gas"onclick="refresh(3)">gas</button>
+        </div>
+        <div class="value_box">
+            <img id="image">
+           <center><h4 id="value"></h4></center> 
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
