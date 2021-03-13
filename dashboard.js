@@ -1,4 +1,11 @@
-const api_url='https://api.thingspeak.com/channels/714686/feeds.json?results=2'
+//pass id=714686 in url
+function temp(){
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    return urlParams.get('id')
+}
+const id=temp()
+const api_url='https://api.thingspeak.com/channels/'+id+'/feeds.json?results=2'
 var temperature=null;
 var humidity=null;
 var gas=null;
